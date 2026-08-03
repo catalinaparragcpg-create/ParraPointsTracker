@@ -1,0 +1,12 @@
+{
+  "name": "Parra Points Tracker",
+  "short_name": "Parra",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1F4EC",
+  "theme_color": "#2F6E4E",
+  "icons": [
+    { "src": "/icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
