@@ -1,7 +1,7 @@
 // This runs on Netlify's servers, not in the browser — so the API key
 // never gets exposed to anyone using the app.
 
-exports.handler = async (event) => {
+export async function handler(event) {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
@@ -44,4 +44,4 @@ exports.handler = async (event) => {
   } catch (err) {
     return { statusCode: 500, body: JSON.stringify({ error: err.message || 'Unknown error' }) };
   }
-};
+}
